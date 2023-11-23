@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { FormEvent } from "react";
 import { Loader, PasswordInput, clsx } from "@mantine/core";
@@ -64,7 +64,7 @@ const Login: React.FC = () => {
         <PasswordInput
           placeholder="••••••••"
           id="password-input"
-          // type="password"
+          type="password"
           label="Password"
           description=""
           withAsterisk
