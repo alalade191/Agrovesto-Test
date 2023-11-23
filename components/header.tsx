@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 const Header = () => {
   return (
@@ -13,16 +13,6 @@ const Header = () => {
             className="w-full h-full object-contain"
           />
         </figure>
-
-        {/* <figure className="h-[50px] w-[30px]">
-          <Image
-            height={20}
-            width={80}
-            src={"/images/light-mode.svg"}
-            alt="logo"
-            className="w-full h-full object-contain"
-          />
-        </figure> */}
       </div>
     </header>
   );
