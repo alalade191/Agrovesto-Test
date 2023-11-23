@@ -1,6 +1,5 @@
 import { createBuilder } from "@ibnlanre/portal";
 import { LOGINAPI } from "./api/axios-config";
-import { ISignUp } from "./types";
 
 export const builder = createBuilder({
   authentication: {

@@ -1,6 +1,5 @@
 import React, { useState, FormEvent } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { Loader, PasswordInput, clsx } from "@mantine/core";
 import AuthLayout from "./auth-layout";
@@ -134,8 +133,11 @@ const ResetPassword: React.FC = () => {
               alt="breadcrumb"
             />
           </figure>
-          <span className="font-semibold font-switzer text-[#5E606A] ">
-            <Link href="/login">Back to Sign in</Link>
+          <span
+            onClick={() => push(`/login`)}
+            className="font-semibold font-switzer text-[#5E606A] "
+          >
+            Back to Sign in
           </span>
         </div>
       </form>

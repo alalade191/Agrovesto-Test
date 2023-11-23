@@ -1,8 +1,8 @@
 import Image from "next/image";
-
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 const HomepageBody: React.FC = () => {
+  const { push } = useRouter();
   return (
     <section className="w-full pt-[60px] pb-[80px] flex flex-col items-center justify-center flex-1">
       <div className="w-[90%] mx-auto">
@@ -15,13 +15,14 @@ const HomepageBody: React.FC = () => {
               </span>
             </h2>
             <button
+              onClick={() => push(`/login`)}
               style={{
                 boxShadow: "0px 31px 34px 0px rgba(16, 39, 246, 0.20)",
               }}
               className="text-sm text-white bg-[#283A9D] rounded-lg py-[6px] px-[24px] font-medium mt-[60px]
              transition-transform duration-300 transform-gpu hover:scale-110 ease-in-out"
             >
-              <Link href="/login">Sign in</Link>
+              Sign in
             </button>
           </div>
           <div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { Children } from "react";
+import React from "react";
 
 interface IAuthLayout {
   children: React.ReactNode;
@@ -21,7 +21,6 @@ const AuthLayout: React.FC<IAuthLayout> = ({ children }) => {
           </figure>
         </header>
         <div className="w-[90%] mx-auto flex flex-1 justify-center items-center">
-          {/* main content of body */}
           <section className="flex items-center justify-center gap-[4vw] ">
             <article className="w-[531px] my-auto">
               <figure className="w-[309px] h-[300px] mx-auto">
@@ -44,7 +43,6 @@ const AuthLayout: React.FC<IAuthLayout> = ({ children }) => {
                 </p>
               </div>
             </article>
-            {/* sign in with sso container */}
 
             <div
               style={{ boxShadow: "0px 4px 44px 0px rgba(0, 0, 0, 0.16)" }}

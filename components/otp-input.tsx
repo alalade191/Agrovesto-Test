@@ -100,7 +100,16 @@ const Otp: React.FC = () => {
           <span className="text-[#BF2018] font-semi-bold cursor-pointer">
             Resend pin?
           </span>
-          {/*on click of resend pin will reload this component */}
+        </div>
+
+        <div className="font-normal text-base text-center text-[#8F9198] font-switzer w-[386px]">
+          Network Error?{" "}
+          <span
+            onClick={() => push(`reset-password`)}
+            className="text-[#BF2018] font-semi-bold cursor-pointer"
+          >
+            Reset password
+          </span>
         </div>
         <div className="flex items-center gap-3 pt-[12px]">
           <figure>
@@ -112,7 +121,7 @@ const Otp: React.FC = () => {
             />
           </figure>
           <span className="font-semibold font-switzer text-[#5E606A] ">
-            <Link href="/">Back to Sign in</Link>
+            <Link href="/login">Back to Sign in</Link>
           </span>
         </div>
       </form>

@@ -95,7 +95,7 @@ const SignUp: React.FC = () => {
         <PasswordInput
           placeholder="••••••••"
           id="password-input"
-          type="password"
+          // type="password"
           label="Password"
           description=""
           withAsterisk
@@ -136,8 +136,11 @@ const SignUp: React.FC = () => {
           )}
         </button>
 
-        <span className="font-semibold font-switzer text-[#5E606A] ">
-          <Link href="/login">Back to Sign in</Link>
+        <span
+          onClick={() => push(`/login`)}
+          className="font-semibold font-switzer text-[#5E606A] "
+        >
+          Back to Sign in
         </span>
       </form>
     </AuthLayout>

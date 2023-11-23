@@ -1,10 +1,8 @@
-import React, { FormEvent, useContext, useState } from "react";
+import React, { FormEvent, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Router } from "next/router";
 import { useRouter } from "next/navigation";
 import InputField from "./input-field";
-import { Button, Loader, clsx } from "@mantine/core";
+import { Loader, clsx } from "@mantine/core";
 import AuthLayout from "./auth-layout";
 import { useMutation } from "@tanstack/react-query";
 import { builder } from "@/builder";
@@ -97,8 +95,11 @@ const UserForgetPassword: React.FC = () => {
               alt="breadcrumb"
             />
           </figure>
-          <span className="font-semibold font-switzer text-[#5E606A] ">
-            <Link href="/login">Back to Sign in</Link>
+          <span
+            onClick={() => push("/login")}
+            className="font-semibold font-switzer text-[#5E606A] "
+          >
+            Back to Sign in
           </span>
         </div>
       </form>
