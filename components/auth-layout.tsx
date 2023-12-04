@@ -14,7 +14,7 @@ const AuthLayout: React.FC<IAuthLayout> = ({ children }) => {
             <Image
               height={50}
               width={50}
-              src="https://www.agrovesto.com/_next/static/media/plogo.b1b5b697.svg"
+              src="https://www.agrovesto.com/images/plogo.svg"
               alt="login-logo"
               className="w-full h-full"
             />

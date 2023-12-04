@@ -95,7 +95,6 @@ const SignUp: React.FC = () => {
         <PasswordInput
           placeholder="••••••••"
           id="password-input"
-          type="password"
           label="Password"
           description=""
           withAsterisk

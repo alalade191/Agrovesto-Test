@@ -57,7 +57,6 @@ const ResetPassword: React.FC = () => {
 
         <PasswordInput
           id="password-input"
-          type="password"
           placeholder="Enter your new password"
           label="New Password"
           description=""
@@ -82,7 +81,6 @@ const ResetPassword: React.FC = () => {
 
         <PasswordInput
           id="password-input"
-          type="password"
           placeholder="Re enter your new password"
           label="Confirm Password"
           description=""

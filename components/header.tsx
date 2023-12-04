@@ -8,7 +8,7 @@ const Header = () => {
           <Image
             height={20}
             width={80}
-            src="https://www.agrovesto.com/_next/static/media/plogo.b1b5b697.svg"
+            src="https://www.agrovesto.com/images/plogo.svg"
             alt="logo"
             className="w-full h-full object-contain"
           />
